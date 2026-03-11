@@ -2,8 +2,10 @@ package ru.bulgakov.qa;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -40,7 +42,6 @@ public class SearchTest {
 
         switchTo().window(2);
         $(".styles-module-scss-module__t92_WG__price\n h2").shouldHave(text("₽ 47 000 "));
-
 
     }
 }
